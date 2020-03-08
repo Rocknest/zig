@@ -470,4 +470,6 @@ pub const Thread = struct {
         };
         return @intCast(usize, count);
     }
+
+    pub const newStackCall = @import("new_stack_call.zig").newStackCall;
 };
